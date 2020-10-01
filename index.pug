@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title The Home Depot | Atrapa las herramientas
+        link(rel="shortcut icon" href="favicon.ico")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap")
+        link(rel="stylesheet", href="app/app.css")
+    body
+        .urlerror Verifica tu URL e intenta de nuevo.
+        header
+            div.middlebar
+            h1.animate__animated.animate__fadeInDownBig: img(src="app/thehomedepot.svg")
+        section.start.text-center.mt-5.animate__animated.animate__bounceIn.animate__delay-1s
+            h2.h1 Atrapa las Herramientas
+            p selecciona tu certificado de valor indicado
+            hr
+        section.mt-5
+            div.middlebar
+            .certificados.container
+                .row.justify-content-center.align-items-center.flex-wrap
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="itunes").certificado.animate__animated.animate__bounceIn.animate__delay-2s
+                        img(src="app/c-itunes.png", alt="Itunes").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="googleplay ").certificado.animate__animated.animate__bounceIn.animate__delay-2s
+                        img(src="app/c-googleplay.png", alt="Google Play").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="uber").certificado.animate__animated.animate__bounceIn.animate__delay-2s
+                        img(src="app/c-uber.png", alt="Uber").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="coppel").certificado.animate__animated.animate__bounceIn.animate__delay-2s
+                        img(src="app/c-coppel.png", alt="Coppel").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="bestbuy").certificado.animate__animated.animate__bounceIn.animate__delay-2s
+                        img(src="app/c-bestbuy.png", alt="Best Buy").img-fluid
+                        div.valor $000
+                .row.justify-content-center.align-items-center.flex-wrap
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="nintendo").certificado.animate__animated.animate__bounceIn.animate__delay-3s
+                        img(src="app/c-nintendo.png", alt="Nintendo").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="youtube").certificado.animate__animated.animate__bounceIn.animate__delay-3s
+                        img(src="app/c-youtube.png", alt="YouTube").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="spotify").certificado.animate__animated.animate__bounceIn.animate__delay-3s
+                        img(src="app/c-spotify.png", alt="Spotify").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="xbox").certificado.animate__animated.animate__bounceIn.animate__delay-3s
+                        img(src="app/c-xbox.png", alt="XBox").img-fluid
+                        div.valor $000
+                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="blim").certificado.animate__animated.animate__bounceIn.animate__delay-3s
+                        img(src="app/c-blim.png", alt="Blim").img-fluid
+                        div.valor $000
+        .container: section.row.comenzar
+            .col-12.text-center: button.btncomenzar(disabled).animate__animated JUGAR
+
+        .gamecontainer.hidden
+            iframe(src="thd/index.html")
+        
+        .gameend.hidden
+            .text-center
+                h1.animate__animated.animate__fadeInDownBig: img(src="app/thehomedepot.svg")
+                div.h2 ¡Gracias por participar!
+                div Si eres uno de los ganadores te contactaremos al correo electrónico o teléfono registrado.
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js")
+        script.
+            let certificate = null
+            let sound = new Howl({src: ['app/coin.mp3']})
+            let SurveyID = url('?SurveyID')
+            $(document).ready(function () {
+                
+                if(SurveyID==undefined){
+                    $('.urlerror').addClass('active')
+                    return false
+                }
+
+                //Select Certificate
+                $('.certificado').click(function () {
+                    $('.certificado.active').removeClass('active')
+                    $('.certificado.animate__heartBeat').removeClass('animate__heartBeat')
+                    $('.certificado.animate__bounceIn').removeClass('animate__bounceIn')
+                    $('.certificado.animate__delay-3s').removeClass('animate__delay-3s')
+                    $('.certificado.animate__delay-2s').removeClass('animate__delay-2s')
+                    $(this).addClass('active animate__heartBeat')
+                    sound.play()
+                    certificate = $(this).attr('data')
+                    if(certificate!=null){
+                        $('.btncomenzar').prop('disabled',false)
+                        $('.btncomenzar').addClass('animate__zoomIn')
+                    }
+                })
+                $('.btncomenzar').click(function () {
+                    $('.gamecontainer').removeClass('hidden')
+                })
+            })
+            window.addEventListener('message', function (ev){
+                let score = JSON.parse(ev.data)
+                console.log('::Mensaje recibido')
+
+                $.ajax({
+                    url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
+                    data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: score._val }),
+                    contentType: "application/json; charset=utf-8",
+                    datatype: "json",
+                    type: "post",
+                    success: function (response) {
+                        console.log(response);
+                        setTimeout(function () {
+                            $('.gameend').removeClass('hidden')
+                        }, 3000)
+                    }
+                });
+
+                    
+                
+            })
