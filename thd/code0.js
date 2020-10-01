@@ -79,7 +79,8 @@ gdjs.MainMenuCode.condition0IsTrue_0.val = false;
 {
 gdjs.MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }if (gdjs.MainMenuCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Level1", false);
+{
+    gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Level1", false);
 }}
 
 }

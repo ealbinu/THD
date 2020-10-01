@@ -133,12 +133,12 @@
           })
       })
       window.addEventListener('message', function (ev){
-          let score = JSON.parse(ev.data)
-          console.log('::Mensaje recibido')
+          
+          let thescore = JSON.parse(ev.data)
       
           $.ajax({
               url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
-              data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: score._val }),
+              data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: thescore.score._value }),
               contentType: "application/json; charset=utf-8",
               datatype: "json",
               type: "post",
