@@ -88,12 +88,12 @@ hr {
 
 }
 
-.certificados .certificado:hover,
+
 .certificados .certificado.active {
     transform: scale(1.1);
 }
 
-.certificados .certificado:hover:before,
+
 .certificados .certificado.active:before {
     transform: rotate(10deg);
     margin-left: 0;
@@ -194,4 +194,17 @@ hr {
 
 .gameend.hidden{
 	display: none;
+}
+
+
+.pleca .container {
+	text-align: right;
+}
+.pleca .container img {
+	max-height: 16px;
+}
+.pleca .bottom {
+	background: #8DB9E6;
+	padding: 6px 0;
+	text-align: center;
 }

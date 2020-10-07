@@ -36,6 +36,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/app\/bluemx.png": {
+		"ft": 32768,
+		"iS": 1202,
+		"oA": 0,
+		"oAP": "\/app\/bluemx.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/app\/c-bestbuy.png": {
 		"ft": 32768,
 		"iS": 5095,
@@ -153,6 +164,17 @@
 		"oAP": "\/app\/coin.mp3",
 		"oF": 0
 		},
+	"\/app\/poweredbyBlue.png": {
+		"ft": 32768,
+		"iS": 3457,
+		"oA": 0,
+		"oAP": "\/app\/poweredbyBlue.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/app\/thehomedepot.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -169,6 +191,16 @@
 		"oA": 0,
 		"oAP": "\/favicon.ico",
 		"oF": 0
+		},
+	"\/gd-splash-image.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/gd-splash-image-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/index.html": {
 		"cB": 0,
@@ -417,6 +449,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/thd\/btn_comenzar_active.png": {
+		"ft": 32768,
+		"iS": 8695,
+		"oA": 0,
+		"oAP": "\/thd\/btn_comenzar_active.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/thd\/btncomenzar.png": {
 		"ft": 32768,
 		"iS": 10387,
@@ -477,6 +520,17 @@
 		"iS": 7932,
 		"oA": 0,
 		"oAP": "\/thd\/btnsiguiente.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/thd\/btnsiguiente_active.png": {
+		"ft": 32768,
+		"iS": 11257,
+		"oA": 0,
+		"oAP": "\/thd\/btnsiguiente_active.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
