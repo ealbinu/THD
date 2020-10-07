@@ -57,7 +57,7 @@ gdjs.EndSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.EndSceneCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.EndSceneCode.userFunc0x793cc8 = function(runtimeScene) {
+gdjs.EndSceneCode.userFunc0x6c91c8 = function(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 if (runtimeScene.getTimeManager().isFirstFrame()) {
@@ -90,7 +90,7 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObject
 {
 
 
-gdjs.EndSceneCode.userFunc0x793cc8(runtimeScene);
+gdjs.EndSceneCode.userFunc0x6c91c8(runtimeScene);
 
 }
 

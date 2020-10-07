@@ -77,7 +77,7 @@ gdjs.MainMenu2Code.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPre
 gdjs.copyArray(gdjs.MainMenu2Code.GDBTNcomenzarObjects1, gdjs.MainMenu2Code.GDBTNcomenzarObjects2);
 
 {for(var i = 0, len = gdjs.MainMenu2Code.GDBTNcomenzarObjects2.length ;i < len;++i) {
-    gdjs.MainMenu2Code.GDBTNcomenzarObjects2[i].setAnimationName("StartPressed");
+    gdjs.MainMenu2Code.GDBTNcomenzarObjects2[i].setAnimationName("click");
 }
 }}
 
@@ -124,11 +124,7 @@ gdjs.MainMenu2Code.condition0IsTrue_0.val = false;
 {
 gdjs.MainMenu2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDBTNcomenzarObjects1Objects, runtimeScene, true, false);
 }if (gdjs.MainMenu2Code.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ButtonStart"), gdjs.MainMenu2Code.GDButtonStartObjects1);
-{for(var i = 0, len = gdjs.MainMenu2Code.GDButtonStartObjects1.length ;i < len;++i) {
-    gdjs.MainMenu2Code.GDButtonStartObjects1[i].setAnimationName("StartHover");
-}
-}
+
 { //Subevents
 gdjs.MainMenu2Code.eventsList0(runtimeScene);} //End of subevents
 }
