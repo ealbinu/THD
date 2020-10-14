@@ -27,9 +27,28 @@ html(lang="es")
                         h2.h1 Atrapa las Herramientas
                         p Selecciona tu certificado de valor indicado
                     .row.justify-content-center.align-items-center.flex-wrap
-                        .col-md-2.col-4: div(data="itunes").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-itunes.png", alt="Itunes").img-fluid
-                            div.valor $000
+                        - var cer = []
+                        - cer.push(['xbox', 'Xbox', '$200'])
+                        - cer.push(['xboxlive', 'Xbox Live', '$169'])
+                        - cer.push(['playstation', 'PlayStation Store', '$10 USD'])
+                        - cer.push(['spotify', 'Spotify Premium', '$100'])
+                        - cer.push(['itunes', 'iTunes México (App Store)', '$200'])
+                        - cer.push(['wow', 'Starbucks', '$250'])
+                        - cer.push(['wow', "Dominos Pizza, Burger King, California Pizza Kitchen, PF Chang’s, Italianni's, Chili’s, The Cheesecake Factory, Vips y El Portón", '$250'])
+                        - cer.push(['uber', 'Uber y UberEats', '$150'])
+                        - cer.push(['amazon', 'Amazon', '$200'])
+                        - cer.push(['facturafiel', 'FacturaFiel', '$200'])
+                        - cer.push(['superdoctor', 'Súper Doctor', '$240'])
+                        - cer.push(['cinepolis', 'Cinépolis Klic', '$200'])
+                        - cer.push(['mixup', 'Mixup', '$200'])
+                        - cer.push(['enviaflores', 'enviaflores.com', '$250'])
+                        - cer.push(['gandhi', 'Librerías Gandhi', '$200'])
+                        - cer.push(['puntosfutbol', 'Puntos Fútbol', '$200'])
+                        each v in cer
+                            .col-md-2.col-4: div(data=v[0] title=v[1]).certificado.animate__animated.animate__bounceIn
+                                img(src="app/cert/"+v[0]+".png", alt="Itunes").img-fluid
+                                div.valor #{v[2]}
+                    //
                         .col-md-2.col-4: div(data="googleplay ").certificado.animate__animated.animate__bounceIn
                             img(src="app/c-googleplay.png", alt="Google Play").img-fluid
                             div.valor $000
@@ -42,7 +61,7 @@ html(lang="es")
                         .col-md-2.col-4: div(data="bestbuy").certificado.animate__animated.animate__bounceIn
                             img(src="app/c-bestbuy.png", alt="Best Buy").img-fluid
                             div.valor $000
-                    .row.justify-content-center.align-items-center.flex-wrap
+                    //.row.justify-content-center.align-items-center.flex-wrap
                         .col-md-2.col-4: div(data="nintendo").certificado.animate__animated.animate__bounceIn
                             img(src="app/c-nintendo.png", alt="Nintendo").img-fluid
                             div.valor $000
@@ -62,7 +81,6 @@ html(lang="es")
             .col-12.text-center: button.btncomenzar(disabled).animate__animated JUGAR
 
         .gamecontainer.hidden
-            .closeit: i.fas.fa-times
             iframe()
         
         .gameend.hidden
@@ -83,7 +101,7 @@ html(lang="es")
             let SurveyID = url('?SurveyID')
             $(document).ready(function () {
                 
-                if(SurveyID==undefined){
+                if(SurveyID==undefined || SurveyID.length!=14){
                     $('.urlerror').addClass('active')
                     return false
                 }
@@ -103,11 +121,7 @@ html(lang="es")
                         //$('.btncomenzar').addClass('animate__zoomIn')
                         $('.gamecontainer').removeClass('hidden')
                         $('iframe').attr('src', 'thd/index.html')
-                        $('.closeit').click(function () {
-                            certificate=null
-                            $('.gamecontainer').addClass('hidden')
-                            $('iframe').attr('src', '')
-                        })
+                        
                     }
                 })
                 $('.btncomenzar').click(function () {
@@ -116,29 +130,44 @@ html(lang="es")
                 })
             })
 
+            function closeGame(){
+                certificate=null
+                $('.gamecontainer').addClass('hidden')
+                $('iframe').attr('src', '')
+            }
+
             window.addEventListener('message', function (ev){
+                
                 let thescore = JSON.parse(ev.data)
 
 
-                var finalscoreval = thescore.score._value
+                if(thescore.score){
+                    var finalscoreval = thescore.score._value
+                    var tools = thescore.tools._children
+                    var rocks = thescore.rocks._value
+                    var toolstring = 'A='+tools.A._value+'&B='+tools.B._value+'&C='+tools.C._value+'&D='+tools.D._value+'&E='+tools.E._value+'&rocas='+rocks
 
-                $.ajax({
-                    url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
-                    data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: finalscoreval.toString(), Desglose: "Desarrollo..."}),
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "json",
-                    type: "post",
-                    success: function (response) {
-                        setTimeout(function () {
-                            //$('.gameend').removeClass('hidden')
-                            window.location.href = 'https://homedepot.com.mx/'
-                            //$('.gameend').removeClass('hidden')
-                        }, 6000)
-                    }, error: function (err){
-                        console.log('Ocurrió un error')
-                        console.log(err)
-                    }
-                });
+                    $.ajax({
+                        url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
+                        data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: finalscoreval.toString(), Desglose: toolstring}),
+                        contentType: "application/json; charset=utf-8",
+                        datatype: "json",
+                        type: "post",
+                        success: function (response) {
+                            setTimeout(function () {
+                                //$('.gameend').removeClass('hidden')
+                                window.location.href = 'https://homedepot.com.mx/'
+                            }, 6000)
+                        }, error: function (err){
+                            console.log('Ocurrió un error')
+                            console.log(err)
+                        }
+                    });
+                } else {
+
+                    closeGame()
+
+                }
 
                     
                 

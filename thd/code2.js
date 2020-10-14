@@ -59,12 +59,13 @@ gdjs.EndSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.EndSceneCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.EndSceneCode.userFunc0x7a56d0 = function(runtimeScene) {
+gdjs.EndSceneCode.userFunc0x7a2420 = function(runtimeScene) {
 "use strict";
-runtimeScene.setBackgroundColor(100,100,240);
 if (runtimeScene.getTimeManager().isFirstFrame()) {
     var finalscore = runtimeScene.getGame().getVariables().get("FinalScore");
-    window.top.postMessage(JSON.stringify({ score: finalscore}), '*');
+    var herramientas = runtimeScene.getGame().getVariables().get("Herramientas");
+    var rocas = runtimeScene.getGame().getVariables().get("Rocas");
+    window.top.postMessage(JSON.stringify({ score: finalscore, tools: herramientas, rocks: rocas}), '*');
 }
 };
 gdjs.EndSceneCode.eventsList0 = function(runtimeScene) {
@@ -92,7 +93,7 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObject
 {
 
 
-gdjs.EndSceneCode.userFunc0x7a56d0(runtimeScene);
+gdjs.EndSceneCode.userFunc0x7a2420(runtimeScene);
 
 }
 
