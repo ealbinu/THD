@@ -8,56 +8,62 @@ html(lang="es")
         link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
         link(rel="stylesheet", href="app/app.css")
     body
         .urlerror Verifica tu URL e intenta de nuevo.
-        header
-            div.middlebar
-            h1.animate__animated.animate__fadeInDownBig: img(src="app/thehomedepot.svg")
-        section.start.text-center.mt-5.animate__animated.animate__bounceIn.animate__delay-1s
-            h2.h1 Atrapa las Herramientas
-            p selecciona tu certificado de valor indicado
-            hr
-        section.mt-5
-            div.middlebar
-            .certificados.container
-                .row.justify-content-center.align-items-center.flex-wrap
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="itunes").certificado.animate__animated.animate__bounceIn.animate__delay-2s
-                        img(src="app/c-itunes.png", alt="Itunes").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="googleplay ").certificado.animate__animated.animate__bounceIn.animate__delay-2s
-                        img(src="app/c-googleplay.png", alt="Google Play").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="uber").certificado.animate__animated.animate__bounceIn.animate__delay-2s
-                        img(src="app/c-uber.png", alt="Uber").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="coppel").certificado.animate__animated.animate__bounceIn.animate__delay-2s
-                        img(src="app/c-coppel.png", alt="Coppel").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="bestbuy").certificado.animate__animated.animate__bounceIn.animate__delay-2s
-                        img(src="app/c-bestbuy.png", alt="Best Buy").img-fluid
-                        div.valor $000
-                .row.justify-content-center.align-items-center.flex-wrap
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="nintendo").certificado.animate__animated.animate__bounceIn.animate__delay-3s
-                        img(src="app/c-nintendo.png", alt="Nintendo").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="youtube").certificado.animate__animated.animate__bounceIn.animate__delay-3s
-                        img(src="app/c-youtube.png", alt="YouTube").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="spotify").certificado.animate__animated.animate__bounceIn.animate__delay-3s
-                        img(src="app/c-spotify.png", alt="Spotify").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="xbox").certificado.animate__animated.animate__bounceIn.animate__delay-3s
-                        img(src="app/c-xbox.png", alt="XBox").img-fluid
-                        div.valor $000
-                    .col-sm.col-6.col-xs-4.col-md-4.col-lg: div(data="blim").certificado.animate__animated.animate__bounceIn.animate__delay-3s
-                        img(src="app/c-blim.png", alt="Blim").img-fluid
-                        div.valor $000
-        .container: section.row.comenzar
+        .container
+            header
+                div.middlebar
+                h1.animate__animated.animate__fadeInDownBig: img(src="app/thehomedepot.svg")
+            //section.start.text-center.mt-2.animate__animated.animate__bounceIn
+                p.small En caso de resultar ganador, por favor indica el certificado electrónico que quisieras ganar.
+                h2.h1 Atrapa las Herramientas
+                p Selecciona tu certificado de valor indicado
+            section.mt-2
+                .certificados.container
+                    .start.text-center.mt-2.animate__animated.animate__bounceIn
+                        p.small En caso de resultar ganador, por favor indica el certificado electrónico que quisieras ganar.
+                        h2.h1 Atrapa las Herramientas
+                        p Selecciona tu certificado de valor indicado
+                    .row.justify-content-center.align-items-center.flex-wrap
+                        .col-md-2.col-4: div(data="itunes").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-itunes.png", alt="Itunes").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="googleplay ").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-googleplay.png", alt="Google Play").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="uber").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-uber.png", alt="Uber").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="coppel").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-coppel.png", alt="Coppel").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="bestbuy").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-bestbuy.png", alt="Best Buy").img-fluid
+                            div.valor $000
+                    .row.justify-content-center.align-items-center.flex-wrap
+                        .col-md-2.col-4: div(data="nintendo").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-nintendo.png", alt="Nintendo").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="youtube").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-youtube.png", alt="YouTube").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="spotify").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-spotify.png", alt="Spotify").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="xbox").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-xbox.png", alt="XBox").img-fluid
+                            div.valor $000
+                        .col-md-2.col-4: div(data="blim").certificado.animate__animated.animate__bounceIn
+                            img(src="app/c-blim.png", alt="Blim").img-fluid
+                            div.valor $000
+        //.container: section.row.comenzar
             .col-12.text-center: button.btncomenzar(disabled).animate__animated JUGAR
 
         .gamecontainer.hidden
-            iframe(src="thd/index.html")
+            .closeit: i.fas.fa-times
+            iframe()
         
         .gameend.hidden
             .text-center
@@ -87,35 +93,45 @@ html(lang="es")
                     $('.certificado.active').removeClass('active')
                     $('.certificado.animate__heartBeat').removeClass('animate__heartBeat')
                     $('.certificado.animate__bounceIn').removeClass('animate__bounceIn')
-                    $('.certificado.animate__delay-3s').removeClass('animate__delay-3s')
-                    $('.certificado.animate__delay-2s').removeClass('animate__delay-2s')
+                    $('.certificado').removeClass('animate__delay-3s')
+                    $('.certificado').removeClass('')
                     $(this).addClass('active animate__heartBeat')
                     sound.play()
                     certificate = $(this).attr('data')
                     if(certificate!=null){
-                        $('.btncomenzar').prop('disabled',false)
-                        $('.btncomenzar').addClass('animate__zoomIn')
+                        //$('.btncomenzar').prop('disabled',false)
+                        //$('.btncomenzar').addClass('animate__zoomIn')
+                        $('.gamecontainer').removeClass('hidden')
+                        $('iframe').attr('src', 'thd/index.html')
+                        $('.closeit').click(function () {
+                            certificate=null
+                            $('.gamecontainer').addClass('hidden')
+                            $('iframe').attr('src', '')
+                        })
                     }
                 })
                 $('.btncomenzar').click(function () {
                     $('.gamecontainer').removeClass('hidden')
+                    $('iframe').attr('src', 'thd/index.html')
                 })
             })
+
             window.addEventListener('message', function (ev){
-                let score = JSON.parse(ev.data)
-                console.log('::Mensaje recibido')
+                let thescore = JSON.parse(ev.data)
 
                 $.ajax({
                     url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
-                    data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: score._val }),
+                    data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: thescore.score._value }),
                     contentType: "application/json; charset=utf-8",
                     datatype: "json",
                     type: "post",
                     success: function (response) {
-                        console.log(response);
+
                         setTimeout(function () {
+                            //$('.gameend').removeClass('hidden')
+                            window.location.href = 'https://homedepot.com.mx/'
                             $('.gameend').removeClass('hidden')
-                        }, 3000)
+                        }, 6000)
                     }
                 });
 
