@@ -59,10 +59,17 @@ gdjs.MainMenu2Code.GDObstacleObjects3= [];
 gdjs.MainMenu2Code.GDNewObject2Objects1= [];
 gdjs.MainMenu2Code.GDNewObject2Objects2= [];
 gdjs.MainMenu2Code.GDNewObject2Objects3= [];
+gdjs.MainMenu2Code.GDTEXTBG2Objects1= [];
+gdjs.MainMenu2Code.GDTEXTBG2Objects2= [];
+gdjs.MainMenu2Code.GDTEXTBG2Objects3= [];
+gdjs.MainMenu2Code.GDBTNBackObjects1= [];
+gdjs.MainMenu2Code.GDBTNBackObjects2= [];
+gdjs.MainMenu2Code.GDBTNBackObjects3= [];
 
 gdjs.MainMenu2Code.conditionTrue_0 = {val:false};
 gdjs.MainMenu2Code.condition0IsTrue_0 = {val:false};
 gdjs.MainMenu2Code.condition1IsTrue_0 = {val:false};
+gdjs.MainMenu2Code.condition2IsTrue_0 = {val:false};
 
 
 gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDButtonStartObjects1Objects = Hashtable.newFrom({"ButtonStart": gdjs.MainMenu2Code.GDButtonStartObjects1});gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDBTNcomenzarObjects1Objects = Hashtable.newFrom({"BTNcomenzar": gdjs.MainMenu2Code.GDBTNcomenzarObjects1});gdjs.MainMenu2Code.eventsList0 = function(runtimeScene) {
@@ -97,7 +104,7 @@ gdjs.MainMenu2Code.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRel
 }
 
 
-};gdjs.MainMenu2Code.eventsList1 = function(runtimeScene) {
+};gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDBTNBackObjects1Objects = Hashtable.newFrom({"BTNBack": gdjs.MainMenu2Code.GDBTNBackObjects1});gdjs.MainMenu2Code.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -156,6 +163,25 @@ gdjs.copyArray(runtimeScene.getObjects("instructions3"), gdjs.MainMenu2Code.GDin
 }{for(var i = 0, len = gdjs.MainMenu2Code.GDinstructions3Objects1.length ;i < len;++i) {
     gdjs.MainMenu2Code.GDinstructions3Objects1[i].setTextAlignment("center");
 }
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BTNBack"), gdjs.MainMenu2Code.GDBTNBackObjects1);
+
+gdjs.MainMenu2Code.condition0IsTrue_0.val = false;
+gdjs.MainMenu2Code.condition1IsTrue_0.val = false;
+{
+gdjs.MainMenu2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDBTNBackObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.MainMenu2Code.condition0IsTrue_0.val ) {
+{
+gdjs.MainMenu2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}}
+if (gdjs.MainMenu2Code.condition1IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "01MainMenu", false);
 }}
 
 }
@@ -226,6 +252,12 @@ gdjs.MainMenu2Code.GDObstacleObjects3.length = 0;
 gdjs.MainMenu2Code.GDNewObject2Objects1.length = 0;
 gdjs.MainMenu2Code.GDNewObject2Objects2.length = 0;
 gdjs.MainMenu2Code.GDNewObject2Objects3.length = 0;
+gdjs.MainMenu2Code.GDTEXTBG2Objects1.length = 0;
+gdjs.MainMenu2Code.GDTEXTBG2Objects2.length = 0;
+gdjs.MainMenu2Code.GDTEXTBG2Objects3.length = 0;
+gdjs.MainMenu2Code.GDBTNBackObjects1.length = 0;
+gdjs.MainMenu2Code.GDBTNBackObjects2.length = 0;
+gdjs.MainMenu2Code.GDBTNBackObjects3.length = 0;
 
 gdjs.MainMenu2Code.eventsList1(runtimeScene);
 return;

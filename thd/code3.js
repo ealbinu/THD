@@ -228,7 +228,7 @@ for(var i = 0, len = gdjs.Level1Code.GDShape8Objects3.length ;i < len;++i) {
     gdjs.Level1Code.GDShape8Objects3[i].deleteFromScene(runtimeScene);
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "collect.mp3", false, 50, 1);
-}{runtimeScene.getVariables().get("Score").add(gdjs.random(100) + 20);
+}{runtimeScene.getVariables().get("Score").add(Math.round((( gdjs.Level1Code.GDShape8Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape7Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape6Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape5Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape4Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape3Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape2Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape1Objects3.length === 0 ) ? 0 :gdjs.Level1Code.GDShape1Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape2Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape3Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape4Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape5Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape6Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape7Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape8Objects3[0].getScaleX()) * 100));
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "CubetaLight");
 }}
 
@@ -708,7 +708,7 @@ gdjs.Level1Code.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionT
     gdjs.Level1Code.GDObstacleObjects2[i].deleteFromScene(runtimeScene);
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "error.mp3", false, 100, 1);
-}{runtimeScene.getVariables().get("Score").sub(gdjs.random(400) + 100);
+}{runtimeScene.getVariables().get("Score").sub(250);
 }{for(var i = 0, len = gdjs.Level1Code.GDMonsterObjects2.length ;i < len;++i) {
     gdjs.Level1Code.GDMonsterObjects2[i].getBehavior("Flash").Flash(1.5, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }

@@ -68,6 +68,9 @@ gdjs._481MainMenuCode.GDicPhoneObjects3= [];
 gdjs._481MainMenuCode.GDicComputerObjects1= [];
 gdjs._481MainMenuCode.GDicComputerObjects2= [];
 gdjs._481MainMenuCode.GDicComputerObjects3= [];
+gdjs._481MainMenuCode.GDTEXTBGObjects1= [];
+gdjs._481MainMenuCode.GDTEXTBGObjects2= [];
+gdjs._481MainMenuCode.GDTEXTBGObjects3= [];
 
 gdjs._481MainMenuCode.conditionTrue_0 = {val:false};
 gdjs._481MainMenuCode.condition0IsTrue_0 = {val:false};
@@ -310,6 +313,9 @@ gdjs._481MainMenuCode.GDicPhoneObjects3.length = 0;
 gdjs._481MainMenuCode.GDicComputerObjects1.length = 0;
 gdjs._481MainMenuCode.GDicComputerObjects2.length = 0;
 gdjs._481MainMenuCode.GDicComputerObjects3.length = 0;
+gdjs._481MainMenuCode.GDTEXTBGObjects1.length = 0;
+gdjs._481MainMenuCode.GDTEXTBGObjects2.length = 0;
+gdjs._481MainMenuCode.GDTEXTBGObjects3.length = 0;
 
 gdjs._481MainMenuCode.eventsList1(runtimeScene);
 return;

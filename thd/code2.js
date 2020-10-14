@@ -51,13 +51,15 @@ gdjs.EndSceneCode.GDmainbackgroundObjects1= [];
 gdjs.EndSceneCode.GDmainbackgroundObjects2= [];
 gdjs.EndSceneCode.GDFelicidadesObjects1= [];
 gdjs.EndSceneCode.GDFelicidadesObjects2= [];
+gdjs.EndSceneCode.GDTEXTBG3Objects1= [];
+gdjs.EndSceneCode.GDTEXTBG3Objects2= [];
 
 gdjs.EndSceneCode.conditionTrue_0 = {val:false};
 gdjs.EndSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.EndSceneCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.EndSceneCode.userFunc0x6c91c8 = function(runtimeScene) {
+gdjs.EndSceneCode.userFunc0x7a56d0 = function(runtimeScene) {
 "use strict";
 runtimeScene.setBackgroundColor(100,100,240);
 if (runtimeScene.getTimeManager().isFirstFrame()) {
@@ -76,7 +78,7 @@ gdjs.EndSceneCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustB
 }if (gdjs.EndSceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObjects1);
 {for(var i = 0, len = gdjs.EndSceneCode.GDScoreObjects1.length ;i < len;++i) {
-    gdjs.EndSceneCode.GDScoreObjects1[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) + " PUNTOS");
+    gdjs.EndSceneCode.GDScoreObjects1[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) + gdjs.evtTools.string.newLine() + "PUNTOS");
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "finished.mp3", false, 50, 1);
 }{for(var i = 0, len = gdjs.EndSceneCode.GDScoreObjects1.length ;i < len;++i) {
@@ -90,7 +92,7 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObject
 {
 
 
-gdjs.EndSceneCode.userFunc0x6c91c8(runtimeScene);
+gdjs.EndSceneCode.userFunc0x7a56d0(runtimeScene);
 
 }
 
@@ -152,6 +154,8 @@ gdjs.EndSceneCode.GDmainbackgroundObjects1.length = 0;
 gdjs.EndSceneCode.GDmainbackgroundObjects2.length = 0;
 gdjs.EndSceneCode.GDFelicidadesObjects1.length = 0;
 gdjs.EndSceneCode.GDFelicidadesObjects2.length = 0;
+gdjs.EndSceneCode.GDTEXTBG3Objects1.length = 0;
+gdjs.EndSceneCode.GDTEXTBG3Objects2.length = 0;
 
 gdjs.EndSceneCode.eventsList0(runtimeScene);
 return;
