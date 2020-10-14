@@ -149,19 +149,24 @@
       window.addEventListener('message', function (ev){
           let thescore = JSON.parse(ev.data)
       
+      
+          var finalscoreval = thescore.score._value
+      
           $.ajax({
               url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
-              data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: thescore.score._value }),
+              data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: finalscoreval.toString(), Desglose: "Desarrollo..."}),
               contentType: "application/json; charset=utf-8",
               datatype: "json",
               type: "post",
               success: function (response) {
-      
                   setTimeout(function () {
                       //$('.gameend').removeClass('hidden')
                       window.location.href = 'https://homedepot.com.mx/'
-                      $('.gameend').removeClass('hidden')
+                      //$('.gameend').removeClass('hidden')
                   }, 6000)
+              }, error: function (err){
+                  console.log('Ocurrió un error')
+                  console.log(err)
               }
           });
       
