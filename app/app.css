@@ -170,17 +170,22 @@ hr {
 	left: 0; right: 0;
     bottom: 0;
     height: 20%;
-    background: #F58427;
+    background:linear-gradient(#F58427, #E06115);
     transition: all .5s;
 }
 .gameend .h2{
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 20px auto;
     text-align: center;
     background: #DEDEDE;
-    padding: 2px 6px;
+    padding: 8px 6px;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 14px;
+
+}
+.gameend .h2 .idparticipacion{
+    background:#F58427; border-radius: 5px; padding: 2px 6px; color:#fff;
+    text-shadow: 0 1px 1px #CB3F00;
 }
 
 .gameend.hidden{
