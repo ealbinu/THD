@@ -53,13 +53,15 @@ gdjs.EndSceneCode.GDFelicidadesObjects1= [];
 gdjs.EndSceneCode.GDFelicidadesObjects2= [];
 gdjs.EndSceneCode.GDTEXTBG3Objects1= [];
 gdjs.EndSceneCode.GDTEXTBG3Objects2= [];
+gdjs.EndSceneCode.GDPuntajeTextObjects1= [];
+gdjs.EndSceneCode.GDPuntajeTextObjects2= [];
 
 gdjs.EndSceneCode.conditionTrue_0 = {val:false};
 gdjs.EndSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.EndSceneCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.EndSceneCode.userFunc0x7a2420 = function(runtimeScene) {
+gdjs.EndSceneCode.userFunc0x72dc08 = function(runtimeScene) {
 "use strict";
 if (runtimeScene.getTimeManager().isFirstFrame()) {
     var finalscore = runtimeScene.getGame().getVariables().get("FinalScore");
@@ -77,6 +79,7 @@ gdjs.EndSceneCode.condition0IsTrue_0.val = false;
 {
 gdjs.EndSceneCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.EndSceneCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("PuntajeText"), gdjs.EndSceneCode.GDPuntajeTextObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObjects1);
 {for(var i = 0, len = gdjs.EndSceneCode.GDScoreObjects1.length ;i < len;++i) {
     gdjs.EndSceneCode.GDScoreObjects1[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) + gdjs.evtTools.string.newLine() + "PUNTOS");
@@ -84,6 +87,9 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObject
 }{gdjs.evtTools.sound.playSound(runtimeScene, "finished.mp3", false, 50, 1);
 }{for(var i = 0, len = gdjs.EndSceneCode.GDScoreObjects1.length ;i < len;++i) {
     gdjs.EndSceneCode.GDScoreObjects1[i].setTextAlignment("center");
+}
+}{for(var i = 0, len = gdjs.EndSceneCode.GDPuntajeTextObjects1.length ;i < len;++i) {
+    gdjs.EndSceneCode.GDPuntajeTextObjects1[i].setBBText("[b][spacing=10]" + gdjs.evtTools.common.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)) + "[/spacing][b]\n[size=60]PUNTOS[/size]");
 }
 }}
 
@@ -93,7 +99,7 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObject
 {
 
 
-gdjs.EndSceneCode.userFunc0x7a2420(runtimeScene);
+gdjs.EndSceneCode.userFunc0x72dc08(runtimeScene);
 
 }
 
@@ -157,6 +163,8 @@ gdjs.EndSceneCode.GDFelicidadesObjects1.length = 0;
 gdjs.EndSceneCode.GDFelicidadesObjects2.length = 0;
 gdjs.EndSceneCode.GDTEXTBG3Objects1.length = 0;
 gdjs.EndSceneCode.GDTEXTBG3Objects2.length = 0;
+gdjs.EndSceneCode.GDPuntajeTextObjects1.length = 0;
+gdjs.EndSceneCode.GDPuntajeTextObjects2.length = 0;
 
 gdjs.EndSceneCode.eventsList0(runtimeScene);
 return;

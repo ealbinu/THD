@@ -296,6 +296,7 @@ gdjs.Level1Code.GDShape7Objects4.length = k;for(var i = 0, k = 0, l = gdjs.Level
 }
 gdjs.Level1Code.GDShape8Objects4.length = k;}if (gdjs.Level1Code.condition0IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("A").add(1);
+}{runtimeScene.getVariables().get("Score").add(10);
 }}
 
 }
@@ -380,6 +381,7 @@ gdjs.Level1Code.GDShape7Objects4.length = k;for(var i = 0, k = 0, l = gdjs.Level
 }
 gdjs.Level1Code.GDShape8Objects4.length = k;}if (gdjs.Level1Code.condition0IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("B").add(1);
+}{runtimeScene.getVariables().get("Score").add(30);
 }}
 
 }
@@ -464,6 +466,7 @@ gdjs.Level1Code.GDShape7Objects4.length = k;for(var i = 0, k = 0, l = gdjs.Level
 }
 gdjs.Level1Code.GDShape8Objects4.length = k;}if (gdjs.Level1Code.condition0IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("C").add(1);
+}{runtimeScene.getVariables().get("Score").add(50);
 }}
 
 }
@@ -548,6 +551,7 @@ gdjs.Level1Code.GDShape7Objects4.length = k;for(var i = 0, k = 0, l = gdjs.Level
 }
 gdjs.Level1Code.GDShape8Objects4.length = k;}if (gdjs.Level1Code.condition0IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("D").add(1);
+}{runtimeScene.getVariables().get("Score").add(100);
 }}
 
 }
@@ -624,6 +628,7 @@ gdjs.Level1Code.GDShape7Objects3.length = k;for(var i = 0, k = 0, l = gdjs.Level
 }
 gdjs.Level1Code.GDShape8Objects3.length = k;}if (gdjs.Level1Code.condition0IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("E").add(1);
+}{runtimeScene.getVariables().get("Score").add(150);
 }}
 
 }
@@ -683,7 +688,6 @@ for(var i = 0, len = gdjs.Level1Code.GDShape8Objects3.length ;i < len;++i) {
     gdjs.Level1Code.GDShape8Objects3[i].deleteFromScene(runtimeScene);
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "collect.mp3", false, 50, 1);
-}{runtimeScene.getVariables().get("Score").add(Math.round((( gdjs.Level1Code.GDShape8Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape7Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape6Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape5Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape4Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape3Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape2Objects3.length === 0 ) ? (( gdjs.Level1Code.GDShape1Objects3.length === 0 ) ? 0 :gdjs.Level1Code.GDShape1Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape2Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape3Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape4Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape5Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape6Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape7Objects3[0].getScaleX()) :gdjs.Level1Code.GDShape8Objects3[0].getScaleX()) * 100));
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "CubetaLight");
 }
 { //Subevents

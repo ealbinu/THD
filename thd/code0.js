@@ -114,7 +114,7 @@ gdjs._481MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButton
 }
 
 
-};gdjs._481MainMenuCode.mapOfGDgdjs_46_95481MainMenuCode_46GDBTNBackObjects1Objects = Hashtable.newFrom({"BTNBack": gdjs._481MainMenuCode.GDBTNBackObjects1});gdjs._481MainMenuCode.userFunc0x6c4fe8 = function(runtimeScene) {
+};gdjs._481MainMenuCode.mapOfGDgdjs_46_95481MainMenuCode_46GDBTNBackObjects1Objects = Hashtable.newFrom({"BTNBack": gdjs._481MainMenuCode.GDBTNBackObjects1});gdjs._481MainMenuCode.userFunc0x712c30 = function(runtimeScene) {
 "use strict";
 window.top.postMessage(JSON.stringify({ close: true }), '*');
 };
@@ -130,7 +130,7 @@ gdjs._481MainMenuCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs._481MainMenuCode.userFunc0x6c4fe8(runtimeScene);
+gdjs._481MainMenuCode.userFunc0x712c30(runtimeScene);
 
 }
 
@@ -248,7 +248,7 @@ gdjs._481MainMenuCode.condition2IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(
 }
 if (gdjs._481MainMenuCode.condition2IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "EndScene", false);
-}{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(999);
+}{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(15999);
 }}
 
 }
@@ -260,16 +260,43 @@ gdjs.copyArray(runtimeScene.getObjects("BTNBack"), gdjs._481MainMenuCode.GDBTNBa
 
 gdjs._481MainMenuCode.condition0IsTrue_0.val = false;
 gdjs._481MainMenuCode.condition1IsTrue_0.val = false;
+gdjs._481MainMenuCode.condition2IsTrue_0.val = false;
 {
 gdjs._481MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs._481MainMenuCode.mapOfGDgdjs_46_95481MainMenuCode_46GDBTNBackObjects1Objects, runtimeScene, true, false);
 }if ( gdjs._481MainMenuCode.condition0IsTrue_0.val ) {
 {
 gdjs._481MainMenuCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if ( gdjs._481MainMenuCode.condition1IsTrue_0.val ) {
+{
+gdjs._481MainMenuCode.condition2IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 2, "BackButtonTimer");
 }}
-if (gdjs._481MainMenuCode.condition1IsTrue_0.val) {
+}
+if (gdjs._481MainMenuCode.condition2IsTrue_0.val) {
 
 { //Subevents
 gdjs._481MainMenuCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+gdjs._481MainMenuCode.condition0IsTrue_0.val = false;
+{
+gdjs._481MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs._481MainMenuCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "BackButtonTimer");
+}}
+
+}
+
+
+{
+
+
+{
 }
 
 }

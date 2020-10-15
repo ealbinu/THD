@@ -383,96 +383,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/pixi-renderers\/layer-pixi-renderer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/layer-pixi-renderer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/loadingscreen-pixi-renderer-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/loadingscreen-pixi-renderer-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/loadingscreen-pixi-renderer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/loadingscreen-pixi-renderer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/pixi-filters-tools.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/pixi-filters-tools-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/pixi-image-manager.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/pixi-image-manager-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/pixi.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/pixi-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/runtimegame-pixi-renderer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/runtimegame-pixi-renderer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/runtimescene-pixi-renderer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/runtimescene-pixi-renderer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/pixi-renderers\/spriteruntimeobject-pixi-renderer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/pixi-renderers\/spriteruntimeobject-pixi-renderer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/thd\/backbtn.png": {
 		"ft": 32768,
 		"iS": 2782,
@@ -1108,6 +1018,36 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/Extensions\/BBText\/bbtextruntimeobject-pixi-renderer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/BBText\/bbtextruntimeobject-pixi-renderer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/BBText\/bbtextruntimeobject.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/BBText\/bbtextruntimeobject-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/BBText\/pixi-multistyle-text\/dist\/pixi-multistyle-text.umd.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/BBText\/pixi-multistyle-text\/dist\/pixi-multistyle-text.umd-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/Extensions\/ParticleSystem\/particleemitterobject-pixi-renderer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1377,6 +1317,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/thd\/HelveticaNeue.ttf",
+		"oF": 0
+		},
+	"\/thd\/HelveticaNeue2.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/thd\/HelveticaNeue2.ttf",
 		"oF": 0
 		},
 	"\/thd\/HelveticaNeueLight.ttf": {
@@ -1778,16 +1725,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/thd\/pixi-renderers\/loadingscreen-pixi-renderer-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/thd\/pixi-renderers\/loadingscreen-pixi-renderer-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/thd\/pixi-renderers\/loadingscreen-pixi-renderer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -2094,7 +2031,7 @@
 		},
 	"\/thd\/text1.png": {
 		"ft": 32768,
-		"iS": 79074,
+		"iS": 67553,
 		"oA": 0,
 		"oAP": "\/thd\/text1.png",
 		"oF": 0,
@@ -2105,7 +2042,7 @@
 		},
 	"\/thd\/text2.png": {
 		"ft": 32768,
-		"iS": 54166,
+		"iS": 60900,
 		"oA": 0,
 		"oAP": "\/thd\/text2.png",
 		"oF": 0,
@@ -2116,7 +2053,7 @@
 		},
 	"\/thd\/text3.png": {
 		"ft": 32768,
-		"iS": 137681,
+		"iS": 117738,
 		"oA": 0,
 		"oAP": "\/thd\/text3.png",
 		"oF": 0,

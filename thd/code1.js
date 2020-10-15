@@ -70,6 +70,7 @@ gdjs.MainMenu2Code.conditionTrue_0 = {val:false};
 gdjs.MainMenu2Code.condition0IsTrue_0 = {val:false};
 gdjs.MainMenu2Code.condition1IsTrue_0 = {val:false};
 gdjs.MainMenu2Code.condition2IsTrue_0 = {val:false};
+gdjs.MainMenu2Code.condition3IsTrue_0 = {val:false};
 
 
 gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDButtonStartObjects1Objects = Hashtable.newFrom({"ButtonStart": gdjs.MainMenu2Code.GDButtonStartObjects1});gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDBTNcomenzarObjects1Objects = Hashtable.newFrom({"BTNcomenzar": gdjs.MainMenu2Code.GDBTNcomenzarObjects1});gdjs.MainMenu2Code.eventsList0 = function(runtimeScene) {
@@ -174,14 +175,32 @@ gdjs.copyArray(runtimeScene.getObjects("BTNBack"), gdjs.MainMenu2Code.GDBTNBackO
 
 gdjs.MainMenu2Code.condition0IsTrue_0.val = false;
 gdjs.MainMenu2Code.condition1IsTrue_0.val = false;
+gdjs.MainMenu2Code.condition2IsTrue_0.val = false;
 {
 gdjs.MainMenu2Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenu2Code.mapOfGDgdjs_46MainMenu2Code_46GDBTNBackObjects1Objects, runtimeScene, true, false);
 }if ( gdjs.MainMenu2Code.condition0IsTrue_0.val ) {
 {
 gdjs.MainMenu2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if ( gdjs.MainMenu2Code.condition1IsTrue_0.val ) {
+{
+gdjs.MainMenu2Code.condition2IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 2, "BackButtonTimer");
 }}
-if (gdjs.MainMenu2Code.condition1IsTrue_0.val) {
+}
+if (gdjs.MainMenu2Code.condition2IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "01MainMenu", false);
+}}
+
+}
+
+
+{
+
+
+gdjs.MainMenu2Code.condition0IsTrue_0.val = false;
+{
+gdjs.MainMenu2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.MainMenu2Code.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "BackButtonTimer");
 }}
 
 }

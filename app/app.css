@@ -117,10 +117,10 @@ hr {
     border-color: #f0f0f0;
 }
 
-.urlerror{
+.urlerror, .urlalready{
     display: none;
 }
-.urlerror.active{
+.urlerror.active, .urlalready.active{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,6 +132,9 @@ hr {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -165,14 +168,19 @@ hr {
     position: fixed;
 	z-index: 101;
 	left: 0; right: 0;
-    top: 0; bottom: 0;
-    background: #f5f5f5;
+    bottom: 0;
+    height: 20%;
+    background: #F58427;
     transition: all .5s;
 }
-.gameend h1{
-    max-width: 120px;
+.gameend .h2{
+    font-size: 1rem;
     margin: 20px auto;
     text-align: center;
+    background: #DEDEDE;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 .gameend.hidden{
@@ -211,3 +219,70 @@ hr {
     cursor:pointer;
     font-size: 10px;
 }
+
+
+
+
+.popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.hidden{
+    display: none;
+}
+
+.popup .container {
+	
+	background: #fff;
+	border: 2px solid #832500;
+	box-shadow: 0 6px 0 #832500;
+	border-radius: 5px;
+	padding: 20px 10px;
+    width: 90%;
+    max-width: 600px;
+	/*margin-left: -300px;*/
+}
+.popup .container a{
+    color: #F58426;
+    font-weight: bold;
+}
+.popup .container .valor {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+.popup .container p {
+	font-size: 0.9rem;
+	text-align: left;
+}
+.popup .btnclose {
+	font-size: 1rem;
+	background: #888;
+	border-color: #666;
+}
+
+.btnfinish{
+    font-size: 1rem;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+}
+/*
+@media (max-width: 768px) {
+	.popup .container {
+		width: 96%;
+		max-width: 96%;
+		left: 2%;
+		margin-left: 0;
+	}
+}
+*/

@@ -12,6 +12,7 @@ html(lang="es")
         link(rel="stylesheet", href="app/app.css")
     body
         .urlerror Verifica tu URL e intenta de nuevo.
+        .urlalready Hemos registrado tu participación del día de hoy. <br>Gracias por tu opinión.
         .container
             header
                 div.middlebar
@@ -28,66 +29,46 @@ html(lang="es")
                         p Selecciona tu certificado de valor indicado
                     .row.justify-content-center.align-items-center.flex-wrap
                         - var cer = []
-                        - cer.push(['xbox', 'Xbox', '$200'])
-                        - cer.push(['xboxlive', 'Xbox Live', '$169'])
-                        - cer.push(['playstation', 'PlayStation Store', '$10 USD'])
-                        - cer.push(['spotify', 'Spotify Premium', '$100'])
-                        - cer.push(['itunes', 'iTunes México (App Store)', '$200'])
-                        - cer.push(['wow', 'Starbucks', '$250'])
-                        - cer.push(['wow', "Dominos Pizza, Burger King, California Pizza Kitchen, PF Chang’s, Italianni's, Chili’s, The Cheesecake Factory, Vips y El Portón", '$250'])
-                        - cer.push(['uber', 'Uber y UberEats', '$150'])
-                        - cer.push(['amazon', 'Amazon', '$200'])
-                        - cer.push(['facturafiel', 'FacturaFiel', '$200'])
-                        - cer.push(['superdoctor', 'Súper Doctor', '$240'])
-                        - cer.push(['cinepolis', 'Cinépolis Klic', '$200'])
-                        - cer.push(['mixup', 'Mixup', '$200'])
-                        - cer.push(['enviaflores', 'enviaflores.com', '$250'])
-                        - cer.push(['gandhi', 'Librerías Gandhi', '$200'])
-                        - cer.push(['puntosfutbol', 'Puntos Fútbol', '$200'])
+                        - cer.push(['xbox', '<p>Disfruta de la nueva generación de juegos y entretenimiento con Xbox. Explora consolas, juegos nuevos y clásicos, y accesorios de Xbox empezar tu colección.</p><p>No puedes usar la tarjeta regalo de Xbox para comprar directamente una suscripción a Xbox Live Gold ni ningún otro servicio de suscripción. Asegúrate que tu cuenta de facturación es de México y se encuentra en Pesos Mexicanos, de lo contrario, no podrás canjear la tarjeta regalo.</p>', '$200'])
+                        - cer.push(['xboxlive', '<p>Juega en línea con tu suscripción Gold de 1 mes y únete a la mejor comunidad de jugadores, encuentra rápidamente compañeros para jugar con las opciones Clubes y Buscando grupo. Podrás conseguir entre 2 y 4 juegos gratuitos todos los meses y descuentos de hasta el 50-75 % en la tienda de Xbox One. Sólo válido en México.</p>', '$169'])
+                        - cer.push(['playstation', '<p>Saldo en formato de dólares en la cuenta del usuario para comprar juegos completos, descarga de contenido, comprar o rentar películas y pagar subscripciones dentro de las aplicaciones de la consola.</p>', '$10 USD'])
+                        - cer.push(['spotify', '<p>La tarjeta de regalo es válida para planes Premium Individual.  No es posible usarlas para Premium para Estudiantes, Premium Familiar, Premium Duo ni ofertas de prueba. </p>', '$100'])
+                        - cer.push(['itunes', '<p>Disfruta de una experiencia de entretenimiento totalmente nueva. Utiliza la Tarjeta App Store & iTunes para comprar apps, juegos, música y películas. Válida únicamente para compras realizadas en México de Apple Media Services.</p>', '$200'])
+                        - cer.push(['wow', "<p>Tarjeta pre cargada para consumir en tus restaurantes favoritos.  Válido en Starbucks, Burger King, Chili’s, California Pizza Kitchen, P.F. Chang’s, Italianni’s, The Cheesecake Factory, Vips y El Portón operados por Grupo Alsea en la República Mexicana, conoce la cobertura disponible en: https://www.wowrewards.mx/. Se deberá presentar la App de Wow Rewards con el código de la tarjeta agregada para gozar del saldo.</p>", '$250'])
+                        - cer.push(['uber', '<p>Paga tus viajes de Uber y comidas de Uber Eats. Esta tarjeta puede ser canjeada a través de la aplicación móvil de Uber y Uber Eats y pude ser utilizada en las ciudades en México donde Uber Eats y/o Uber está disponible y en dónde no existan restricciones legales o regulatorias para su uso. La tarjeta no puede ser utilizada fuera de México.</p>', '$150'])
+                        - cer.push(['amazon', '<p>Las Tarjetas Regalo de Amazon.com.mx pueden canjearse por millones de productos de Amazon. Las Tarjetas Regalo de Amazon.com.mx pueden ser utilizados únicamente en la compra de productos participantes en amazon.com.mx.</p>', '$200'])
+                        - cer.push(['facturafiel', '<p>Crea FacturaFiel.com  brinda a sus usuarios la mejor opción costo-beneficio existente en el mercado para expedir facturas y Comprobantes Fiscales Digitales por Internet (CFDI). Esta tarjeta es válida por 25 folios.</p>', '$200'])
+                        - cer.push(['superdoctor', '<p>Tarjeta súper Doctor - 3 meses, algunos de los beneficios son: Asistencia Nutricional telefónica ilimitada, Asistencia Psicológica telefónica ilimitada,  Asistencia Médica telefónica 24/7 ilimitada, Doctor en tu Casa sin costo 3 consultas (Limitado a 1 consulta al mes), Asistencia Dental 2 consultas + limpieza sin costo, Servicio de Ambulancia sin costo (2 eventos), Asistencia VISUAL en Ópticas Devlyn, DescuentaMx disfruta de increíbles descuentos en: Farmacias, Laboratorios, Restaurantes, entretenimiento, entre otros.</p>', '$240'])
+                        - cer.push(['cinepolis', '<p>¡Disfruta los mejores estrenos!, Cinépolis Klic es la plataforma de streaming de Cinépolis con los estrenos recién salidos del cine, las mejores películas de catálogo, series de TV y entretenimiento para toda la familia. Este código te permitirá disfrutar de 4 películas disponible en renta y renta anticipada.</p>', '$200'])
+                        - cer.push(['mixup', '<p>Mixup ¡La tienda más divertida! Música, películas, libros, videojuegos, audífonos, bocinas, cables, juguetes y tecnología. Código válido únicamente para compras en línea. </p>', '$200'])
+                        - cer.push(['enviaflores', '<p>Envía flores, globos y regalos a todo México y sorprende a esa persona especial. Úsalo en <a href="https://www.enviaflores.com" target="_blank">www.enviaflores.com</a> o a la app iOS (enviaflores.com).</p>', '$250'])
+                        - cer.push(['gandhi', '<p>En Gandhi, busca y compra el libro que estás deseando de una manera Fácil y Segura. Código válido unicamente en www.gandhi.com.mx , este código no es válido en tiendas físicas ni en Walmart y Palacio de Hierro.</p>', '$200'])
+                        - cer.push(['puntosfutbol', '<p>Puntos Fútbol es una plataforma de entretenimiento para los fanátic@s del Fútbol, usa tu saldo para partiicpar en Trivias, Subastas, Marcadores y Retas donde podrás demostrar tus conocimientos y ganar increíbles premios.</p>', '$200'])
                         each v in cer
-                            .col-md-2.col-4: div(data=v[0] title=v[1]).certificado.animate__animated.animate__bounceIn
+                            .col-md-2.col-4: div(data=v title=v[1]).certificado.animate__animated.animate__bounceIn
                                 img(src="app/cert/"+v[0]+".png", alt="Itunes").img-fluid
                                 div.valor #{v[2]}
-                    //
-                        .col-md-2.col-4: div(data="googleplay ").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-googleplay.png", alt="Google Play").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="uber").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-uber.png", alt="Uber").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="coppel").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-coppel.png", alt="Coppel").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="bestbuy").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-bestbuy.png", alt="Best Buy").img-fluid
-                            div.valor $000
-                    //.row.justify-content-center.align-items-center.flex-wrap
-                        .col-md-2.col-4: div(data="nintendo").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-nintendo.png", alt="Nintendo").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="youtube").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-youtube.png", alt="YouTube").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="spotify").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-spotify.png", alt="Spotify").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="xbox").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-xbox.png", alt="XBox").img-fluid
-                            div.valor $000
-                        .col-md-2.col-4: div(data="blim").certificado.animate__animated.animate__bounceIn
-                            img(src="app/c-blim.png", alt="Blim").img-fluid
-                            div.valor $000
-        //.container: section.row.comenzar
-            .col-12.text-center: button.btncomenzar(disabled).animate__animated JUGAR
+                    .popup.hidden
+                        .container
+                            .row.justify-content-center.align-items-center
+                                .col-4
+                                    .certificado: img(src="app/cert/xbox.png", alt="Itunes").img-fluid
+                                    .valor $200
+                                .col-8.texts
+                                    p Disfruta de la nueva generación de juegos y entretenimiento con Xbox. Explora consolas, juegos nuevos y clásicos, y accesorios de Xbox empezar tu colección.
+                                    p No puedes usar la tarjeta regalo de Xbox para comprar directamente una suscripción a Xbox Live Gold ni ningún otro servicio de suscripción. Asegúrate que tu cuenta de facturación es de México y se encuentra en Pesos Mexicanos, de lo contrario, no podrás canjear la tarjeta regalo.
+                            .text-center
+                                button.btncomenzar.btnclose.animate__animated CERRAR
+                                button.btncomenzar.btnstart.animate__animated JUGAR
+
 
         .gamecontainer.hidden
             iframe()
         
         .gameend.hidden
             .text-center
-                h1.animate__animated.animate__fadeInDownBig: img(src="app/thehomedepot.svg")
-                div.h2 ¡Gracias por participar!
-                div Si eres uno de los ganadores te contactaremos al correo electrónico o teléfono registrado.
+                div.h2 ID de participación: #[strong.idparticipacion 0]
+                button.btncomenzar.btnfinish.animate__animated TERMINAR
 
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous")
@@ -105,6 +86,20 @@ html(lang="es")
                     $('.urlerror').addClass('active')
                     return false
                 }
+                 /* VERIFY SURVEYID */
+                $.ajax({
+                    url: "https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/ValidateSurvey",
+                    data: JSON.stringify({ SurveyID: SurveyID }),
+                    contentType: "application/json; charset=utf-8",
+                    datatype: "json",
+                    type: "post",
+                    success: function (response) {
+                        if(response.d != 0){
+                            $('.urlalready').addClass('active')
+                            return false
+                        }
+                    }
+                });
 
                 //Select Certificate
                 $('.certificado').click(function () {
@@ -115,32 +110,41 @@ html(lang="es")
                     $('.certificado').removeClass('')
                     $(this).addClass('active animate__heartBeat')
                     sound.play()
-                    certificate = $(this).attr('data')
+                    var datacert = JSON.parse($(this).attr('data'))
+                    console.log(datacert)
+                    certificate = datacert[0]
                     if(certificate!=null){
-                        //$('.btncomenzar').prop('disabled',false)
-                        //$('.btncomenzar').addClass('animate__zoomIn')
-                        $('.gamecontainer').removeClass('hidden')
-                        $('iframe').attr('src', 'thd/index.html')
+                        $('.popup').removeClass('hidden')
+                        $('.popup img').attr('src',"app/cert/"+datacert[0]+".png")
+                        $('.popup .valor').html(datacert[2])
+                        $('.popup .texts').html(datacert[1])
+                        
                         
                     }
                 })
-                $('.btncomenzar').click(function () {
+                $('.btnclose').click(function () {
+                    certificate = null
+                    $('.popup').addClass('hidden')
+                })
+                $('.btnstart').click(function () {
                     $('.gamecontainer').removeClass('hidden')
                     $('iframe').attr('src', 'thd/index.html')
+                    sound.play()
                 })
             })
 
             function closeGame(){
-                certificate=null
                 $('.gamecontainer').addClass('hidden')
                 $('iframe').attr('src', '')
             }
 
+           $('.btnfinish').click(function (){
+                window.location.href = 'https://homedepot.com.mx/'
+           })
+
+            /* MESSAGE FROM GAME */
             window.addEventListener('message', function (ev){
-                
                 let thescore = JSON.parse(ev.data)
-
-
                 if(thescore.score){
                     var finalscoreval = thescore.score._value
                     var tools = thescore.tools._children
@@ -154,19 +158,15 @@ html(lang="es")
                         datatype: "json",
                         type: "post",
                         success: function (response) {
-                            setTimeout(function () {
-                                //$('.gameend').removeClass('hidden')
-                                window.location.href = 'https://homedepot.com.mx/'
-                            }, 6000)
+                            $('.gameend').removeClass('hidden')
+                            $('.idparticipacion').text(response.d)
                         }, error: function (err){
                             console.log('Ocurrió un error')
                             console.log(err)
                         }
                     });
                 } else {
-
                     closeGame()
-
                 }
 
                     
