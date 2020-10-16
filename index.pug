@@ -17,15 +17,12 @@ html(lang="es")
             header
                 div.middlebar
                 h1.animate__animated.animate__fadeInDownBig: img(src="app/thehomedepot.svg")
-            //section.start.text-center.mt-2.animate__animated.animate__bounceIn
-                p.small En caso de resultar ganador, por favor indica el certificado electrónico que quisieras ganar.
-                h2.h1 Atrapa las Herramientas
-                p Selecciona tu certificado de valor indicado
+
             section.mt-2
                 .certificados.container
                     .start.text-center.mt-2.animate__animated.animate__bounceIn
-                        p.small En caso de resultar ganador, por favor indica el certificado electrónico que quisieras ganar.
-                        h2.h1 Atrapa las Herramientas
+                        h2.h1 Bienvenido a Atrapa las Herramientas
+                        p.small Antes de empezar, por favor indica el certificado electrónico que quisieras recibir en caso de resultar ganador.
                         p Selecciona tu certificado de valor indicado
                     .row.justify-content-center.align-items-center.flex-wrap
                         - var cer = []
@@ -70,6 +67,15 @@ html(lang="es")
                 div.h2 ID de participación: #[strong.idparticipacion 0]
                 button.btncomenzar.btnfinish.animate__animated.animate__pulse.animate__infinite.animate__slower TERMINAR
 
+        footer
+            .container
+                .text-right: a(href="https://blue.mx" target="_blank" alt="Blue Pure Loyalty"): img(src="app/poweredbyBlue.png")
+            .plecafoot.text-center: a(href="#").terminos Términos y condiciones
+            .plecablue.text-center: a(href="https://blue.mx" target="_blank" alt="Blue Pure Loyalty"): img(src="app/bluemx.png")
+        .terminosycondiciones
+            .closeterm: i.fas.fa-times
+            .container
+                include _terminos
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
@@ -131,7 +137,16 @@ html(lang="es")
                     $('iframe').attr('src', 'thd/index.html')
                     sound.play()
                 })
-            })
+
+
+                $('.terminos').click(function(){
+                    $('.terminosycondiciones').show()
+                })
+                $('.terminosycondiciones .closeterm').click(function(){
+                    $('.terminosycondiciones').hide()
+                })
+
+            }) /* end ready */
 
             function closeGame(){
                 $('.gamecontainer').addClass('hidden')

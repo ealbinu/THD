@@ -1,7 +1,7 @@
 html{min-height: 100%;}
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(#DEDEDE, #B7B7B7);
+    background: linear-gradient(#DEDEDE, #B7B7B7, #ffffff, #fff, #8CB7E8);
     min-height: 100%;
 }
 
@@ -291,3 +291,69 @@ hr {
 	}
 }
 */
+
+
+footer {
+	margin-top: 100px;
+}
+footer .container {
+	margin-bottom: 10px;
+}
+.plecafoot {
+	background: #0E1E41;
+	color: #fff;
+	padding: 5px;
+}
+.plecafoot a {
+	color: #fff;
+}
+.plecablue {
+	padding: 10px;
+	background: #8CB7E8;
+}
+
+
+
+
+
+
+.terminosycondiciones {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	overflow: auto;
+    padding: 20px;
+    display: none;
+}
+.terminosycondiciones .container {
+	background: #fff;
+	border-radius: 5px;
+	border: 2px solid #F58427;
+	padding: 10px;
+}
+.terminosycondiciones .container h2 {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #F58427;
+}
+.terminosycondiciones .container p,
+.terminosycondiciones .container ul {
+	font-size: 0.8rem;
+}
+.terminosycondiciones .closeterm {
+	background: #F58427;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	width: 40px;
+	text-align: center;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	margin: 0;
+	cursor: pointer;
+}

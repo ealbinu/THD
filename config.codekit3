@@ -16,6 +16,15 @@
 		"oAP": "\/.gitattributes",
 		"oF": 0
 		},
+	"\/_terminos.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/_terminos.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/app\/app-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -876,12 +885,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/code2-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/code2-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/code2.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/code2-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/code3-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/code3-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1018,6 +1047,16 @@
 		"oAP": "\/thd\/error.mp3",
 		"oF": 0
 		},
+	"\/thd\/events-tools\/cameratools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/events-tools\/cameratools-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/events-tools\/cameratools.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1028,12 +1067,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/events-tools\/commontools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/events-tools\/commontools-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/events-tools\/commontools.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/events-tools\/commontools-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/events-tools\/inputtools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/events-tools\/inputtools-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1098,6 +1157,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/events-tools\/soundtools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/events-tools\/soundtools-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/events-tools\/soundtools.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1128,12 +1197,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/events-tools\/stringtools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/events-tools\/stringtools-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/events-tools\/stringtools.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/events-tools\/stringtools-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/events-tools\/windowtools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/events-tools\/windowtools-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1148,12 +1237,42 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/Extensions\/AnchorBehavior\/anchorruntimebehavior-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/AnchorBehavior\/anchorruntimebehavior-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/Extensions\/AnchorBehavior\/anchorruntimebehavior.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/Extensions\/AnchorBehavior\/anchorruntimebehavior-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/BBText\/bbtextruntimeobject-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/BBText\/bbtextruntimeobject-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/BBText\/bbtextruntimeobject-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/BBText\/bbtextruntimeobject-pixi-renderer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1178,12 +1297,42 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/Extensions\/BBText\/pixi-multistyle-text\/dist\/pixi-multistyle-text.umd-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/BBText\/pixi-multistyle-text\/dist\/pixi-multistyle-text.umd-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/Extensions\/BBText\/pixi-multistyle-text\/dist\/pixi-multistyle-text.umd.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/Extensions\/BBText\/pixi-multistyle-text\/dist\/pixi-multistyle-text.umd-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/ParticleSystem\/particleemitterobject-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/ParticleSystem\/particleemitterobject-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/ParticleSystem\/particleemitterobject-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/ParticleSystem\/particleemitterobject-pixi-renderer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1208,12 +1357,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/Extensions\/ParticleSystem\/pixi-particles-pixi-renderer.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/ParticleSystem\/pixi-particles-pixi-renderer.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/Extensions\/ParticleSystem\/pixi-particles-pixi-renderer.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/Extensions\/ParticleSystem\/pixi-particles-pixi-renderer.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/Physics2Behavior\/box2d-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/Physics2Behavior\/box2d-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1228,12 +1397,42 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/Extensions\/Physics2Behavior\/physics2runtimebehavior-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/Physics2Behavior\/physics2runtimebehavior-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/Extensions\/Physics2Behavior\/physics2runtimebehavior.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/Extensions\/Physics2Behavior\/physics2runtimebehavior-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/PrimitiveDrawing\/shapepainterruntimeobject-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/PrimitiveDrawing\/shapepainterruntimeobject-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/PrimitiveDrawing\/shapepainterruntimeobject-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/PrimitiveDrawing\/shapepainterruntimeobject-pixi-renderer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1254,6 +1453,26 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/Extensions\/PrimitiveDrawing\/shapepainterruntimeobject-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/TextObject\/textruntimeobject-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/TextObject\/textruntimeobject-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/Extensions\/TextObject\/textruntimeobject-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/Extensions\/TextObject\/textruntimeobject-pixi-renderer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1296,12 +1515,32 @@
 		"oAP": "\/thd\/finished.mp3",
 		"oF": 0
 		},
+	"\/thd\/fontfaceobserver-font-manager\/fontfaceobserver-font-manager-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/fontfaceobserver-font-manager\/fontfaceobserver-font-manager-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/fontfaceobserver-font-manager\/fontfaceobserver-font-manager.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/fontfaceobserver-font-manager\/fontfaceobserver-font-manager-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/fontfaceobserver-font-manager\/fontfaceobserver-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/fontfaceobserver-font-manager\/fontfaceobserver-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1347,6 +1586,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/thd\/gd-splash-image-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/gd-splash-image-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/thd\/gd-splash-image.js": {
 		"ft": 64,
@@ -1473,12 +1722,32 @@
 		"oAP": "\/thd\/HelveticaNeueLight.ttf",
 		"oF": 0
 		},
+	"\/thd\/howler-sound-manager\/howler-sound-manager-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/howler-sound-manager\/howler-sound-manager-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/howler-sound-manager\/howler-sound-manager.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/howler-sound-manager\/howler-sound-manager-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/howler-sound-manager\/howler.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/howler-sound-manager\/howler.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1581,6 +1850,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/libs\/hshg-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/libs\/hshg-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/libs\/hshg.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1607,6 +1886,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/libs\/jshashtable-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/libs\/rbush-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/libs\/rbush-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1895,12 +2184,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/pixi-renderers\/pixi-filters-tools-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/pixi-renderers\/pixi-filters-tools-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/pixi-renderers\/pixi-filters-tools.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/pixi-renderers\/pixi-filters-tools-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/pixi-renderers\/pixi-image-manager-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/pixi-renderers\/pixi-image-manager-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1915,12 +2224,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/pixi-renderers\/pixi-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/pixi-renderers\/pixi-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/pixi-renderers\/pixi.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/pixi-renderers\/pixi-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/pixi-renderers\/runtimegame-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/pixi-renderers\/runtimegame-pixi-renderer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1935,12 +2264,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/thd\/pixi-renderers\/runtimescene-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/pixi-renderers\/runtimescene-pixi-renderer-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/thd\/pixi-renderers\/runtimescene-pixi-renderer.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/thd\/pixi-renderers\/runtimescene-pixi-renderer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/thd\/pixi-renderers\/spriteruntimeobject-pixi-renderer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/thd\/pixi-renderers\/spriteruntimeobject-pixi-renderer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
