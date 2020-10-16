@@ -114,7 +114,7 @@ gdjs._481MainMenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButton
 }
 
 
-};gdjs._481MainMenuCode.mapOfGDgdjs_46_95481MainMenuCode_46GDBTNBackObjects1Objects = Hashtable.newFrom({"BTNBack": gdjs._481MainMenuCode.GDBTNBackObjects1});gdjs._481MainMenuCode.userFunc0x712c30 = function(runtimeScene) {
+};gdjs._481MainMenuCode.mapOfGDgdjs_46_95481MainMenuCode_46GDBTNBackObjects1Objects = Hashtable.newFrom({"BTNBack": gdjs._481MainMenuCode.GDBTNBackObjects1});gdjs._481MainMenuCode.userFunc0x7a76c0 = function(runtimeScene) {
 "use strict";
 window.top.postMessage(JSON.stringify({ close: true }), '*');
 };
@@ -130,7 +130,7 @@ gdjs._481MainMenuCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs._481MainMenuCode.userFunc0x712c30(runtimeScene);
+gdjs._481MainMenuCode.userFunc0x7a76c0(runtimeScene);
 
 }
 

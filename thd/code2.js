@@ -61,7 +61,7 @@ gdjs.EndSceneCode.condition0IsTrue_0 = {val:false};
 gdjs.EndSceneCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.EndSceneCode.userFunc0x72dc08 = function(runtimeScene) {
+gdjs.EndSceneCode.userFunc0x8f7a70 = function(runtimeScene) {
 "use strict";
 if (runtimeScene.getTimeManager().isFirstFrame()) {
     var finalscore = runtimeScene.getGame().getVariables().get("FinalScore");
@@ -99,7 +99,7 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.EndSceneCode.GDScoreObject
 {
 
 
-gdjs.EndSceneCode.userFunc0x72dc08(runtimeScene);
+gdjs.EndSceneCode.userFunc0x8f7a70(runtimeScene);
 
 }
 
