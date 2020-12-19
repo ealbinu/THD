@@ -11,7 +11,12 @@ html(lang="es")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
         link(rel="stylesheet", href="app/app.css")
     body
-        .urlerror Verifica tu URL e intenta de nuevo.
+        .urlerror
+            div
+                div.mb-4 Ingresa tu número de ticket.
+                form(actions="#")#ticketForm
+                    input(class="ticketN" placeholder="# de ticket" type="text" minlength="19" maxlength="22" required).text-center.mb-2
+                    button(type="submit").btncomenzar.btnTicket.animate__animated Continuar
         .urlalready Hemos registrado tu participación del día de hoy. <br>Gracias por tu opinión.
         .container
             header
@@ -86,12 +91,16 @@ html(lang="es")
             let certificate = null
             let sound = new Howl({src: ['app/coin.mp3']})
             let SurveyID = url('?SurveyID')
+            let TicketID = ''
             $(document).ready(function () {
                 
                 if(SurveyID==undefined || SurveyID.length!=14){
                     $('.urlerror').addClass('active')
-                    return false
+                        /* TIcket btn */
+                        ticketThen()
+                        return false
                 }
+
                  /* VERIFY SURVEYID */
                 $.ajax({
                     url: "https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/ValidateSurvey",
@@ -107,6 +116,42 @@ html(lang="es")
                     }
                 });
 
+                pageFunctions()
+
+
+            }) /* end ready */
+
+
+            function ticketThen(){
+                $('#ticketForm').submit(function (e) {
+                    e.preventDefault()  
+
+                    TicketID = $('.ticketN').val().trim()
+                    if(TicketID){
+                        /* VERIFY TicketNum */
+                        $.ajax({
+                            url: "https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/ValidateTicket",
+                            data: JSON.stringify({ TicketID: '4768974269797691123' }),
+                            contentType: "application/json; charset=utf-8",
+                            datatype: "json",
+                            type: "post",
+                            success: function (response) {
+                                if(response.d != 0){
+                                    $('.urlalready').addClass('active')
+                                    return false
+                                }
+                            }
+                        })
+
+                        pageFunctions()
+                        $('.urlerror').removeClass('active')
+                    } else {
+                        console.log('ERROR: No ticket')
+                    }
+                })
+            }
+
+            function pageFunctions () {
                 //Select Certificate
                 $('.certificado').click(function () {
                     $('.certificado.active').removeClass('active')
@@ -138,6 +183,7 @@ html(lang="es")
                     sound.play()
                 })
 
+                
 
                 $('.terminos').click(function(){
                     $('.terminosycondiciones').show()
@@ -145,8 +191,10 @@ html(lang="es")
                 $('.terminosycondiciones .closeterm').click(function(){
                     $('.terminosycondiciones').hide()
                 })
+            }
 
-            }) /* end ready */
+
+            
 
             function closeGame(){
                 $('.gamecontainer').addClass('hidden')
@@ -168,7 +216,7 @@ html(lang="es")
 
                     $.ajax({
                         url: 'https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/SaveData',
-                        data: JSON.stringify({ SurveyID: SurveyID, Certificate: certificate, Result: finalscoreval.toString(), Desglose: toolstring}),
+                        data: JSON.stringify({ SurveyID: (SurveyID || 0), TicketID:TicketID, Certificate: certificate, Result: finalscoreval.toString(), Desglose: toolstring}),
                         contentType: "application/json; charset=utf-8",
                         datatype: "json",
                         type: "post",
