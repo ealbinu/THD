@@ -16,7 +16,7 @@
       <div>
         <div class="mb-4">Ingresa tu número de ticket.</div>
         <form actions="#" id="ticketForm">
-          <input class="ticketN text-center mb-2" placeholder="# de ticket" type="text" minlength="19" maxlength="22" required="required"/>
+          <input class="ticketN text-center mb-2" placeholder="# de ticket" type="text" minlength="21" maxlength="22" required="required"/>
           <button class="btncomenzar btnTicket animate__animated" type="submit">Continuar</button>
         </form>
       </div>
@@ -243,7 +243,7 @@
                    /* VERIFY TicketNum */
                    $.ajax({
                        url: "https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/ValidateTicket",
-                       data: JSON.stringify({ TicketID: '4768974269797691123' }),
+                       data: JSON.stringify({ TicketID: TicketID }),
                        contentType: "application/json; charset=utf-8",
                        datatype: "json",
                        type: "post",

@@ -15,7 +15,7 @@ html(lang="es")
             div
                 div.mb-4 Ingresa tu número de ticket.
                 form(actions="#")#ticketForm
-                    input(class="ticketN" placeholder="# de ticket" type="text" minlength="19" maxlength="22" required).text-center.mb-2
+                    input(class="ticketN" placeholder="# de ticket" type="text" minlength="21" maxlength="22" required).text-center.mb-2
                     button(type="submit").btncomenzar.btnTicket.animate__animated Continuar
         .urlalready Hemos registrado tu participación del día de hoy. <br>Gracias por tu opinión.
         .container
@@ -131,7 +131,7 @@ html(lang="es")
                         /* VERIFY TicketNum */
                         $.ajax({
                             url: "https://testing4.myblueengine.com/WebSiteHomeDepot/Services.aspx/ValidateTicket",
-                            data: JSON.stringify({ TicketID: '4768974269797691123' }),
+                            data: JSON.stringify({ TicketID: TicketID }),
                             contentType: "application/json; charset=utf-8",
                             datatype: "json",
                             type: "post",
