@@ -15,7 +15,8 @@ html(lang="es")
             div
                 div.mb-4 Ingresa tu número de ticket.
                 form(actions="#")#ticketForm
-                    input(class="ticketN" placeholder="# de ticket" type="text" minlength="21" maxlength="22" required).text-center.mb-2
+                    input(class="ticketN" placeholder="# de ticket" type="number" minlength="22" maxlength="22" required).text-center.mb-2
+                    .error22 Ingresa un ticket válido.
                     button(type="submit").btncomenzar.btnTicket.animate__animated Continuar
         .urlalready Hemos registrado tu participación del día de hoy. <br>Gracias por tu opinión.
         .container
@@ -88,12 +89,15 @@ html(lang="es")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js")
         script.
+            
             let certificate = null
             let sound = new Howl({src: ['app/coin.mp3']})
             let SurveyID = url('?SurveyID')
             let TicketID = ''
             $(document).ready(function () {
                 
+                $('.ticketN').val('')
+
                 if(SurveyID==undefined || SurveyID.length!=14){
                     $('.urlerror').addClass('active')
                         /* TIcket btn */
@@ -124,9 +128,15 @@ html(lang="es")
 
             function ticketThen(){
                 $('#ticketForm').submit(function (e) {
-                    e.preventDefault()  
+                    e.preventDefault()
 
                     TicketID = $('.ticketN').val().trim()
+                    
+                    if(TicketID.length != 22){
+                        $('.error22').show()
+                        return false
+                    }
+
                     if(TicketID){
                         /* VERIFY TicketNum */
                         $.ajax({

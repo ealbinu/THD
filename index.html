@@ -16,7 +16,8 @@
       <div>
         <div class="mb-4">Ingresa tu número de ticket.</div>
         <form actions="#" id="ticketForm">
-          <input class="ticketN text-center mb-2" placeholder="# de ticket" type="text" minlength="21" maxlength="22" required="required"/>
+          <input class="ticketN text-center mb-2" placeholder="# de ticket" type="number" minlength="22" maxlength="22" required="required"/>
+          <div class="error22">Ingresa un ticket válido.</div>
           <button class="btncomenzar btnTicket animate__animated" type="submit">Continuar</button>
         </form>
       </div>
@@ -206,6 +207,8 @@
        let TicketID = ''
        $(document).ready(function () {
            
+           $('.ticketN').val('')
+      
            if(SurveyID==undefined || SurveyID.length!=14){
                $('.urlerror').addClass('active')
                    /* TIcket btn */
@@ -236,9 +239,15 @@
       
        function ticketThen(){
            $('#ticketForm').submit(function (e) {
-               e.preventDefault()  
+               e.preventDefault()
       
                TicketID = $('.ticketN').val().trim()
+               
+               if(TicketID.length != 22){
+                   $('.error22').show()
+                   return false
+               }
+      
                if(TicketID){
                    /* VERIFY TicketNum */
                    $.ajax({
